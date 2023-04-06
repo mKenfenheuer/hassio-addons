@@ -1,6 +1,7 @@
 {
     "name": "TTS Voice Server",
     "slug": "tts-voice-server",
+    "image": "mkenfenheuer/tts-voice-server:latest",
     "version": "1.0.1",
     "description": "German text to speech service for voice generation",
     "url": "https://github.com/mkenfenheuer/hassio-addons/tree/master/tts-server",
