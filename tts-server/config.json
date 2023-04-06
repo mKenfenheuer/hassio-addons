@@ -1,0 +1,21 @@
+{
+    "name": "TTS Voice Server",
+    "slug": "tts-voice-server",
+    "version": "1.0.1",
+    "description": "German text to speech service for voice generation",
+    "url": "https://github.com/mkenfenheuer/hassio-addons/tree/master/tts-server",
+    "arch": [
+        "aarch64",
+        "amd64",
+        "armhf"
+    ],
+    "ports": {
+        "5002/tcp": 59125
+    },
+    "ports_description": {
+        "5002/tcp": "MaryTTS and Rhasspy compatible API"
+    },
+    "webui": "http://[HOST]:[PORT:59125]/",
+    "ingress": true,
+    "ingress_port": 5002
+}
