@@ -14,5 +14,9 @@ log:
 api:
   insecure: true
   dashboard: true
+providers:
+  file:
+    directory: /etc/traefik/file-provider/
+    watch: true
 serversTransport:
   insecureSkipVerify: true
