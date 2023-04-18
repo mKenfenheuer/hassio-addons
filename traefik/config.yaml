@@ -10,9 +10,9 @@ arch:
   - amd64
   - armhf
 ports:
-  - 80:80
+  - 80: 80
 ports_description:
-  - 5002/tcp MaryTTS and Rhasspy compatible API
+  - 5002/tcp: MaryTTS and Rhasspy compatible API
 ingress: true,
 ingress_port: 8080
 options:
