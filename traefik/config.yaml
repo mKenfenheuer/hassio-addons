@@ -1,3 +1,4 @@
+---
 name: "Traefik Edge Router"
 slug: "traefik",
 #image: "docker.io/traefik",
@@ -14,5 +15,9 @@ ports_description:
   - 5002/tcp MaryTTS and Rhasspy compatible API
 ingress: true,
 ingress_port: 8080
-
-
+options:
+  log_level: info
+  seconds_between_quotes: 5
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
+  seconds_between_quotes: int(1,120)
