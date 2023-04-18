@@ -7,6 +7,4 @@ RUN chmod +x /usr/bin/run.sh
 
 RUN apk update && apk upgrade && apk add bash
 
-RUN mkdir /etc/traefik/file-provider/
-
 CMD [ "/usr/bin/run.sh" ]

@@ -5,6 +5,8 @@ CONFIG_PATH=/data/options.json
 
 #USERNAME=$(jq --raw-output '.username // empty' $CONFIG_PATH)
 
-#echo "${USERNAME}"
+#echo "${USERNAME}""
+
+mkdir -p /config/traefik/
 
 traefik --configFile=/etc/traefik/traefik.yaml

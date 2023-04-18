@@ -16,7 +16,7 @@ api:
   dashboard: true
 providers:
   file:
-    directory: /etc/traefik/file-provider/
+    directory: /config/traefik/
     watch: true
 serversTransport:
   insecureSkipVerify: true
