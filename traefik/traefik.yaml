@@ -7,12 +7,6 @@ accessLog:
 entryPoints:
   web:
     address: ':80'
-    http:
-      redirections:
-        entryPoint:
-          to: websecure
-          scheme: https
-          permanent: true
   traefik:
     address: ':8080'
 log:
@@ -20,9 +14,5 @@ log:
 api:
   insecure: true
   dashboard: true
-providers:
-  file:
-    directory: /etc/traefik/file-provider/
-    watch: true
 serversTransport:
   insecureSkipVerify: true
