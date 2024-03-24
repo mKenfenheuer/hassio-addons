@@ -1,7 +1,7 @@
 ---
 name: "VLMCSD"
 slug: "vlmcsd"
-image: "docker.io/mikolatero/vlmcsd",
+image: "docker.io/mikolatero/vlmcsd"
 version: "latest"
 description: "VLMCSD is a KMS Emulator in C."
 url: "https://github.com/mkenfenheuer/hassio-addons/tree/master/vlmcsd"
