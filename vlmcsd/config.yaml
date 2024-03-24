@@ -1,0 +1,13 @@
+---
+name: "VLMCSD"
+slug: "vlmcsd"
+image: "docker.io/mikolatero/vlmcsd",
+version: "latest"
+description: "VLMCSD is a KMS Emulator in C."
+url: "https://github.com/mkenfenheuer/hassio-addons/tree/master/vlmcsd"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+ports:
+  1688/tcp: 1688
