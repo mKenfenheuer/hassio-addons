@@ -13,14 +13,14 @@ map:
   - config:rw
 ports:
   80/tcp: 80
+  443/tcp: 443
 ports_description:
-  5002/tcp: MaryTTS and Rhasspy compatible API
+  80/tcp: HTTP Ingress
+  443/tcp: HTTPs Ingress
 ingress: true
 ingress_port: 8080
 ingress_entry: "dashboard"
 options:
-  log_level: info
-  seconds_between_quotes: 5
+  additional_arguments: ""
 schema:
-  log_level: list(trace|debug|info|notice|warning|error|fatal)
-  seconds_between_quotes: int(1,120)
+  additional_arguments: str

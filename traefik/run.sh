@@ -3,10 +3,10 @@ set -e
 
 CONFIG_PATH=/data/options.json
 
-#USERNAME=$(jq --raw-output '.username // empty' $CONFIG_PATH)
+arguments=$(jq --raw-output '.additional_arguments // empty' $CONFIG_PATH)
 
-#echo "${USERNAME}""
+echo "${arguments}"
 
 mkdir -p /config/traefik/
 
-traefik --configFile=/etc/traefik/traefik.yaml
+traefik --configFile=/etc/traefik/traefik.yaml $arguments
