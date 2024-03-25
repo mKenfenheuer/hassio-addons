@@ -10,7 +10,7 @@ log:
   level: WARN
 providers:
   file:
-    directory: /config/traefik/
+    directory: /config/traefik/file-provider/
     watch: true
 serversTransport:
   insecureSkipVerify: true
