@@ -15,4 +15,14 @@ then
     cp /etc/traefik/traefik.yaml /config/traefik/traefik.yaml
 fi
 
+for row in $(jq -r '.env_vars[] | @base64' $CONFIG_PATH); do
+    _jq() {
+     echo ${row} | base64 --decode | jq -r ${1}
+    }
+   name=$(_jq '.name')
+   value=$(_jq '.value')
+   export $name=$value
+   echo $name=$value
+done
+
 traefik --configFile=/config/traefik/traefik.yaml $arguments

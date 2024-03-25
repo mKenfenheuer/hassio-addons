@@ -22,5 +22,11 @@ ingress_port: 8080
 ingress_entry: "dashboard"
 options:
   additional_arguments: ""
+  env_vars:
+    - name: "TZ"
+      value: "Europe/Berlin"
 schema:
   additional_arguments: str
+  env_vars:
+    - name: str
+      value: str
