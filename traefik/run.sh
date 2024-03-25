@@ -17,7 +17,7 @@ fi
 
 for row in $(jq -r '.env_vars[] | @base64' $CONFIG_PATH); do
     _jq() {
-     echo ${row} | base64 --decode | jq -r ${1}
+     echo ${row} | base64 -d | jq -r ${1}
     }
    name=$(_jq '.name')
    value=$(_jq '.value')
