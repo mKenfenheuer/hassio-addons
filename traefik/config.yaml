@@ -2,7 +2,7 @@
 name: "Traefik Edge Router"
 slug: "traefik"
 #image: "docker.io/traefik",
-version: "v3.2"
+version: "v3.5"
 description: "Traefik is an open-source Edge Router that makes publishing your services a fun and easy experience. It receives requests on behalf of your system and finds out which components are responsible for handling them."
 url: "https://github.com/mkenfenheuer/hassio-addons/tree/master/traefik"
 arch:
@@ -14,9 +14,13 @@ map:
 ports:
   80/tcp: 80
   443/tcp: 443
+  1883/tcp: 1883
+  8883/tcp: 8883
 ports_description:
   80/tcp: HTTP Ingress
   443/tcp: HTTPs Ingress
+  1883/tcp: MQTT Ingress
+  8883/tcp: MQTTS Ingress
 ingress: true
 ingress_port: 8080
 ingress_entry: "dashboard"
