@@ -1,4 +1,4 @@
-FROM traefik:v3.2
+FROM traefik:v3.5
 
 COPY traefik.yaml /etc/traefik/traefik.yaml
 
